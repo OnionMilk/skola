@@ -1,0 +1,98 @@
+\documentclass[12pt, letterpaper, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{booktabs} % For prettier tables
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{xcolor}
+
+\title{Kemi Vecka 14 lektion 3}
+\author{Simon Freiermuth}
+\date{15 April 2020}
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+\begin{flushleft}
+%$ CH_3-NH_2+HCl\ \rightarrow\ CH_3-NH_3^++Cl^- $
+%		  1 2 3 4 5 6 7
+\begin{tabular}{ |c|c|c|c|c|c|c| }
+\hline
+%   1               | 2               | 3            | 4                     | 5                     | 6               | 7
+    Molekyl         & $ C_{init} $    & $ n_{init} $ & $ C_{\frac{1}{2}eq} $ & $ n_{\frac{1}{2}eq} $ & $ C_{eq} $      & $ n_{eq} $    \\
+\hline
+    $ CH_3-NH_2 $   & $ 0.0025 $      & $ 0.05 $     & $ 0.4 $               & $ 0.025 $             & $ - $           & $ - $         \\
+\hline
+    $ HCl $         & $ - $           & $ - $        & $ - $                 & $ - $                 & $ - $           & $ - $         \\
+\hline
+    $ CH_3-NH_3^+ $ & $ - $           & $ - $        & $ 0.4 $               & $ 0.025 $             & $ 3.3*10^{-2} $ & $ 0.0025 $    \\
+\hline
+    $ OH^- $        & $ 6.3*10^{-3} $ & $ 0.126 $    & $ 5.0*10^{-4} $       & $ 8.0*10^{-3} $       & $ 1.0*10^{-8} $ & $ 1.3*10^{-7}$\\
+\hline
+    Total volym & \multicolumn{2}{c|}{ $ V_{init} = 0.050 $ } & \multicolumn{2}{c|}{ $ V_{\frac{1}{2}eq} = 0.05+0.0125 $ } & \multicolumn{2}{c|}{ $ V_{eq} = 0.050+0.025 $ } \\
+\hline
+\end{tabular}
+\hfill
+
+$ C=\frac{n}{V}\ \rightarrow\ V=\frac{n}{C}\ \rightarrow\ n=C*V $
+
+\hfill \break
+$ pH = pK_a + log\Big( \frac{[A^-]}{[HA]} \Big) $
+
+\begin{multicols}{2}
+$ K_b = \frac{[CH_3-NH_3^+]*[OH^-]}{[CH_3-NH_2]} $
+\newline
+\newline
+$ log(K_b) = log\Big(\frac{[CH_3-NH_3^+]*[OH^-]}{[CH_3-NH_2]}\Big) $
+\newline
+\newline
+$ -pK_b = log\Big(\frac{[CH_3-NH_3^+]}{[CH_3-NH_2]}\Big)+log([OH^-]) $
+\newline
+\newline
+$ -pK_b = log\Big(\frac{[CH_3-NH_3^+]}{[CH_3-NH_2]}\Big)-pOH $
+\newline
+\newline
+$ pK_b = log\Big(\frac{[CH_3-NH_3^+]}{[CH_3-NH_2]}\Big)+pOH $
+\newline
+\newline
+$ pOH = pK_b+log\Big(\frac{[CH_3-NH_3^+]}{[CH_3-NH_2]}\Big) $
+\newline
+\columnbreak
+
+$ C_{init}(OH^-) = 10^{-(14-pH)} = 6.3*10^{-3}\ mol/dm^3 $
+\newline
+\newline
+$ C_{\frac{1}{2}eq}(OH^-) = 10^{-(14-pH)} = 5.0*10^{-4}\ mol/dm^3 $
+\newline
+\newline
+$ C_{eq}(OH^-) =\ 10^{-(14-pH)} = 1.0*10^{-8}\ mol/dm^3 $
+\end{multicols}
+$ pOH_{\frac{1}{2}eq} = pK_b+log(1) $
+
+$ pK_b = 3.4 $
+\newline
+\newline
+Vid ekvivalenspunkten har vi ingen $ CH_3-NH_2 $ kvar, allt har förbrukats av $ HCl $. Vi hällde i $0.025\ dm^3\ 0.1$
+molarig lösning $ HCl $
+\newline
+\newline
+$ n_{tillsatt}(HCl)\ =\ n_{eq}(CH_3-NH_3^+) = n_{init}(CH_3-NH_2) $
+\newline
+\newline
+$ n_{tillsatt}(HCl)\ =\ V(HCl)*C(HCl) $
+
+$ n_{tillsatt}(HCl)\ =\ 0.025*0.1=0.0025\ mol $
+\newline
+\newline
+\break
+Reaktionen vid Ekvivalenspunkten:
+$ CH_3-NH_3^+\ +\ H_2O\ \rightleftharpoons\ CH_3-NH_2\ +\ H_3O^+ $
+\newline
+\newline
+Bromkresol röd är den bästa indikatorn eftersom dess färgomslag är närmast titrerpunkten
+
+\end{flushleft}
+\end{document}
