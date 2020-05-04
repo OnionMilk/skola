@@ -50,4 +50,3 @@ Either an informal letter or a speech
 
 5. Perforation:
     * The final part of a speech. Make this as dramatic/persuasive/dynamic/humerous (depending on your purpose) as you can.
-
