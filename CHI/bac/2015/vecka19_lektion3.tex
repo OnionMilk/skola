@@ -1,0 +1,189 @@
+\documentclass[12pt, letterpaper, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\usepackage{array}
+\usepackage{booktabs} % For prettier tables
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{xcolor}
+\usepackage{gensymb}
+\usepackage{fullpage}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{scrextend}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{chemfig}
+\usepackage{chemformula}
+
+\graphicspath{ {./bilder/} }
+\title{Vecka 19, Lektion 3\\ Bac 2015 B1}
+\author{Simon Freiermuth \\ \href{mailto:simon@freiermuth.org}{simon@freiermuth.org}}
+\date{9 Maj, 2020}
+
+\begin{document}
+
+%\begin{titlepage}
+\maketitle
+%\end{titlepage}
+
+\begin{flushleft}
+
+
+
+\hfill
+
+\begin{enumerate}[label=\textbf{\alph*)}]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   a)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item % a)
+    $ A $, $ B $, $ C $ och $ D $ är organiska ämnen.\\
+    $ B $, $ C $, $ D $ kan utvinnas ifrån $ A $.
+
+    \hfill
+
+    \begin{enumerate}[label=\textbf{\roman*. }]
+        \item % i.
+        Ange systematiska (IUPAC) namnet av ämnet $ A $.
+
+        \textcolor{red}{
+            Butanol:\\
+           \hfill \\
+            \chemfig{
+                C(-[:0]
+                    C(-[:0]
+                        C(-[:0]
+                            C(-[:0]OH)(-[:90]H)(-[:270]H)
+                        )   (-[:90]H)(-[:270]H)
+                    )   (-[:90]H)(-[:270]H)
+                )   (-[:90]H)(-[:180]H)(-[:270]H)
+            }
+        }
+
+        \hfill % ii.
+
+        \item
+        Ange strukturformeln och det systematiska namnet (IUPAC) av
+        ämnet $ B $.
+
+        \textcolor{red}{
+            Buten: \\
+            \hfill \\
+            \chemfig{
+                C(-[:0]
+                    C(-[:0]
+                        C(=[:0]
+                            C(-[:315]H)(-[:45]H)
+                        )   (-[:270]H)
+                    )   (-[:90]H)(-[:270]H)
+                )   (-[:90]H)(-[:180]H)(-[:270]H)
+            }
+        }
+
+        \hfill
+
+        \item % iii.
+        Namnge reaktionen som sker när $ A $ omvandlas till $ B $.
+
+        \textcolor{red}{
+            Dehydreringsreaktion. I en dehydreringsreaktion så avges en vatten molekyl och det bildas en alken. Alkenen innehåller en dubbelbindning.
+        }
+
+        \pagebreak
+
+        \noindent Ämnet $ C $ ger ett positiv resultat med fehlings test.
+
+        \hfill
+
+        \item % iv.
+        Ge strukturformeln och det systematiska namnet (IUPAC) för ämnet $ C $.
+
+        \hfill
+
+        \textcolor{red}{
+            Butanal: \\
+            \hfill \\
+            \chemfig{
+                C(-[:0]
+                    C(-[:0]
+                        C(-[:0]
+                            C(-[:315]H)(=[:45]O)
+                        )   (-[:90]H)(-[:270]H)
+                    )   (-[:90]H)(-[:270]H)
+                )(-[:90]H)(-[:180]H)(-[:270]H)
+            }
+        }
+
+%\chemname[<dim>]{\chemfig{<code of the molecule>}}{<name>}
+
+% C (bindning[:vinkel]atom) (bindning[:vinkel]atom) (bindning[:vinkel]atom) (bindning[:vinkel]atom)
+
+        \hfill
+
+        \item % v.
+        Ge halveqvationen för reduktionen av en av det oxiderande agenterna som
+        ofta används i dessa reaktionerna.
+
+
+        \textcolor{red}{
+            \textit{$ \ch{KMnO4} \rightarrow \ch{K+} + \ch{MnO4-} $}\\
+            \textit{$ \ch{8 H+} + \ch{7 e-} + \ch{MnO4-} \rightarrow \ch{4 H2O} + \ch{Mn^2+} $}
+        }
+
+        \item % vi.
+        Sortera ämnena $ A $, $ B $ och $ C $ i stigande ordning enligt kokpunkten
+
+        \begin{enumerate}[label=\textbf{\arabic*. }]
+        \color{red}
+                \item
+                $ B $ (Buten)Buten har lägst kokpunkt eftersom den saknar väte och syre och inte kan bilda väte-bidningar.
+                \item
+                $ C $ (Butanal) Butanal har en karbonylgrupp och i och med den en viss laddningsförskjutning. Därför kan butanal bilda dipol-dipol bindingar.
+                \item
+                $ A $ (Butanol)
+                Butanol har en -OH grupp och kan därför bilda vätebindningar med sig själv. Vätebindingar är den starkaste formen.
+
+        \end{enumerate}
+
+        \hfill
+
+    \end{enumerate}
+
+    \item % b)
+    linolsyra
+    \textit{$ \ch{C17H31COOH}  $}\\
+    linolensyra
+    \textit{$ \ch{C17H29COOH}  $}\\
+    Båda syrorna har samma antal kolatomer men olika antal dubbelbindningar. De är essentiella fettsyror och kallas
+    i vardagliga tal för omega-3 och omega-6 syra.
+
+    \begin{enumerate}[label=\textbf{\roman*. }]
+        \item % i.
+        Vilken information kan man få av iod index över organiska ämnen.
+
+        \textcolor{red}{
+            Man kan få reda på hur många dubbelbindningar man har.
+        }
+
+        \hfill
+
+        \item % ii.
+        \textit{$ \ch{C15H26COOH} $}\\
+
+        % Funktionen:
+        f(n(C),n(H)){
+            n(C)
+        }
+
+
+        \textit{$ \ch{C15H23COOH} $}\\
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{flushleft}
+\end{document}
