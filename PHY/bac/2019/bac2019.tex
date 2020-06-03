@@ -1,0 +1,107 @@
+\documentclass[12pt, letterpaper, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\usepackage{array}
+\usepackage{booktabs} % For prettier tables
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{xcolor}
+\usepackage{gensymb}
+\usepackage{fullpage}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{scrextend}
+\usepackage{graphicx}
+\usepackage{enumitem}
+
+\graphicspath{ {./bilder/} }
+\newcommand{\cfootnote}[1]{\footnote{\centering #1}}
+\title{Bac 2019 Fysik}
+\author{Simon Freiermuth \\ \href{mailto:simon@freiermuth.org}{simon@freiermuth.org}}
+\date{\today}
+
+\begin{document}
+
+%\begin{titlepage}
+\maketitle
+%\end{titlepage}
+
+\begin{flushleft}
+
+    \begin{enumerate}[label=\textbf{Del \Alph*}]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Del A
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \item
+    \hfill
+
+	\begin{enumerate}[label=\textbf{\alph*)}]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % a)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    	\item
+	$\frac{T^2}{r^3}$
+
+	\begin{itemize}
+	    \item[Planet b:]
+
+	    $m=1.02*jordmassan$\\
+	    $r=1.73*10^6 Km$\\
+	    $T=1.51 d$\\
+	    \hfill\\
+	    $\frac{1.51^2}{1.73^3}=0.44$
+
+	    \hfill
+
+	    \item[Planet c:]
+
+	    $m=1.16*jordmassan$\\
+	    $r=2.37*10^6 Km$\\
+	    $T=2.42 d$\\
+	    \hfill\\
+	    $\frac{2.42^2}{2.37^3}=0.44$
+	\end{itemize}
+
+	\hfill
+	\hfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % b)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\item
+	Planet e:
+	$m=0.77$\\
+	$r=4.38*10^9\ m$\\
+	$T=6.10$\\
+
+	$T=6.10\ d=(6.10*24*60*60)s=527040s$\\
+	$O=2\pi r$\\
+	$v_e=\frac{O}{T}=\frac{2\pi 4.58*10^9}{527040}=52216,8\ m/s\ \approx\ 5.2*10^4\ m/s$
+
+	\hfill
+	\hfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % c)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\item
+	$\frac{T^2}{r^3}=0.44$\\
+	$\frac{v_1}{v_2}=\frac{\frac{2\pi r_1}{T_1}}{\frac{2\pi r_2}{T_2}}\ \rightarrow\ \frac{r_1}{T_1}*\frac{T_2}{r_2}$\\
+	$\frac{v_1}{v_2}=\sqrt{\frac{r_2}{r_1}}$\\
+	$\frac{r_1}{T_1}*\frac{T_2}{r_2}=\sqrt{\frac{r_2}{r_1}}$
+
+	\hfill
+
+	Kvadrering:\\
+
+	$\frac{r_1^2}{T_1^2}*\frac{T_2^2}{r_2^2}=\frac{r_2}{r_1}\ \ \ \ \ \ \ \ | *r_1\ \ |/r_2$\\
+	$\frac{r_1^3}{T_1^2}*\frac{T_2^2}{r_2^3}=1\ \rightarrow\ \frac{r^3}{T^2}* \frac{T^2}{r^3}$
+
+
+    \end{enumerate}
+\end{enumerate}
+
+\end{flushleft}
+
+\end{document}
