@@ -1,0 +1,150 @@
+\documentclass[12pt, letterpaper, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\usepackage{array}
+\usepackage{booktabs} % For prettier tables
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{xcolor}
+\usepackage{gensymb}
+\usepackage{fullpage}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{scrextend}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\graphicspath{ {./} }
+\newcommand{\cfootnote}[1]{\footnote{\centering #1}}
+\title{Bac 2015 Del A}
+\author{Simon Freiermuth \\ \href{mailto:simon@freiermuth.org}{simon@freiermuth.org}}
+\date{\today}
+
+\begin{document}
+
+%\begin{titlepage}
+\maketitle
+%\end{titlepage}
+
+\begin{flushleft}
+
+\begin{enumerate}[label=\textbf{\arabic*)}]
+%------------------------------------------------------------------------------------------
+%   1)
+%------------------------------------------------------------------------------------------
+    \item
+    Lös eqvationen:\\
+    $ln(3x-14)=0$\\
+
+    \hfill
+
+    \textcolor{red}{
+    $ e^{ln(3x-14)}\ =\ e^0 $\\
+    $ 3x-14=1 $\\
+    $ x=\dfrac{15}{3}=5 $
+    }
+
+    \hfill
+
+%------------------------------------------------------------------------------------------
+%   2)
+%------------------------------------------------------------------------------------------
+   \item
+
+   \hfill
+
+   % \includegraphics[scale=0.08]{graf1_tangent.png}\\
+   Bestäm eqvationen för tangtenten till grafen $ f $ där $ x=-1 $.\\
+
+   \textcolor{red}{
+      $ f'(-1)=-4 $\\
+      $ 3=-4*(-1)+m $\\
+      $ m=3-4 = 1 $\\
+      $ t(x) = -4x+1 $
+   }
+
+   \hfill
+
+%------------------------------------------------------------------------------------------
+%   3)
+%------------------------------------------------------------------------------------------
+   \item
+   funktionen $ f $ är given av $ f(x)=\dfrac{1}{3}x^3-\dfrac{1}{2}x^2-2x+\dfrac{1}{3} $.
+
+   Bestäm det intervall i vilket $ f $ är avtagande.
+
+   \textcolor{red}{
+      $$ f'(x) = x^2 - x - 2 $$\\
+      $$ f(x) = 0 $$\\
+      $$ 0 = x^2 - x - 2 $$\\
+      $$ (x-\frac{1}{2})^2 - \frac{1}{4}-2 = y $$\\
+      $$ (x-\frac{1}{2})^2 + \frac{-9}{4} = 0 $$\\
+      $$ (x-\frac{1}{2})^2 = \frac{9}{4} $$\\
+      $$ \sqrt{(x-\frac{1}{2})} = \frac{9}{4} $$\\
+      $$ x-\frac{1}{2} = \sqrt{\frac{9}{4}} $$\\
+      $$ x-\frac{1}{2} = \pm\frac{3}{2} $$\\
+      $$ x = 2\ eller\ x=-1 $$
+      \hfill\\
+    \begin{center}
+        \begin{tabular}{ |c|c|c|c|c|c| }
+           \hline
+                     & $ x<-1 $ & $ x=-1 $ & $ -1<x<2 $ & $ x=2 $ & $ 2 < x $  \\
+           \hline
+           $ f'(x) $ &    +     & 0        & -          & 0       &  +         \\
+           \hline
+           $ f(x) $  & $\nearrow$ & -      & $\searrow$ & -       & $\nearrow$ \\
+           \hline
+        \end{tabular}
+    \end{center}
+    $ f $ är avtagande mellan $ x>-1 $ och $ x<2 $.
+   }
+
+   \hfill
+
+%------------------------------------------------------------------------------------------
+%   4)
+%------------------------------------------------------------------------------------------
+   \item
+   Funktionen $ f $ är given av $ f(x)=1-\dfrac{3}{x+2}\ ,\ x>-2 $.\\
+   \hfill\\
+   Bestäm den primitiva funktionen $ F $ till $ f $ som uppfyller $ F(3)=0 $.
+
+   \textcolor{red}{
+      $$  \int(1-\frac{3}{x+2})dx $$
+      $$ F(x) = x-3*ln(x+2) + c $$
+      $$ 0 = 3-3*ln(3+2) + c $$
+      $$ 0 = 0 + c $$
+      $$ F(x) = x-3*ln(x+2) $$
+      $$ F(x) =  x- 3*ln(x+2) + c $$
+      $$ F(3) =0  $$
+    $$ F(x) =x- 3*ln(x+2) + c $$
+    $$ 0 = 3-3*ln(3+2) + c $$
+   }
+
+
+   \begin{multicols}{2}
+	[
+       \item
+	Diagrammet visar grafen till en funktion $ g $.\\
+	Följande integraler är givna:\\
+	]
+
+	$$ \int^5_0 g(x)dx = 1.6 $$
+	$$ \int^5_2 g(x)dx = 3.6 $$
+	$$ \int^8_2 g(x)dx = -3.4 $$
+
+	\columnbreak
+
+	% Jag ska sätta in en annan bild när jag har löst uppgiften
+	\includegraphics[scale=0.05]{graf1_tangent.png}
+
+    \end{multicols}
+
+
+\end{enumerate}
+
+\end{flushleft}
+
+\end{document}
